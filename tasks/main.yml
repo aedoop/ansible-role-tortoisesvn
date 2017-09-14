@@ -1,2 +1,10 @@
 ---
 # tasks file for tortoisesvn
+
+- name: Set dir_info,pkg_info fact in {{ ansible_distribution }} by {{ tortoisesvn_install_type }} install
+  set_fact:
+    dir_info: "{{ tortoisesvn_dirs[ansible_os_family] }}"
+    pkg_info: "{{ tortoisesvn_packages[tortoisesvn_version][ansible_os_family] }}"
+
+- name: Include Windows-{{ tortoisesvn_install_type }}.yml in {{ ansible_distribution }} by {{ tortoisesvn_install_type }} install
+  include: Window-{{ tortoisesvn_install_type }}.yml

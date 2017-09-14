@@ -1,2 +1,7 @@
 ---
 # defaults file for tortoisesvn
+
+package_name: tortoisesvn
+
+tortoisesvn_version: 1.9.7.27907
+tortoisesvn_install_type: pull

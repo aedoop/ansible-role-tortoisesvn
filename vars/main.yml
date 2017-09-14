@@ -1,2 +1,12 @@
 ---
 # vars file for tortoisesvn
+
+tortoisesvn_dirs:
+  Windows:
+    tmp: C:\tmp
+
+tortoisesvn_packages:
+  1.9.7.27907:
+    Windows:
+      file: tortoisesvn.install.1.9.7.27907.nupkg
+      pull: ftp://10.0.250.100/pub/tortoisesvn/tortoisesvn.install.1.9.7.27907.nupkg
